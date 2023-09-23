@@ -1,0 +1,961 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  max-width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  /* border: 1px solid red; */
+}
+
+.brand-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem;
+  margin-left: 200px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 300px;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #d2cece;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+/*/////////////////////////////////////////// Blog Page  //////////////////////////////////////////////////////////*/
+.title {
+  height: 225px;
+  width: 100%;
+  background-color: #c5c6dc;
+  border: 0.1px solid white;
+}
+.titleText {
+  width: 50%;
+  height: 35px;
+  padding: 70px 180px;
+  font-size: 28px;
+}
+/* ///////////////////// drop down design ///////////////////// */
+.navbar-links ul li ul.dropdown li{
+  display: block;
+}
+.navbar-links ul li ul.dropdown{
+  width: 10%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.navbar-links ul li:hover ul.dropdown{
+  display: block;
+}
+
+/* __________________________________________________________________________________ */
+.mainSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.leftSection {
+  width: 60%;
+  height: auto;
+  /* border: 1px solid red; */
+}
+.leftSection img {
+  width: 75%;
+  height: 500px;
+  background-size: cover;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+.sectionText {
+  position: relative;
+}
+.sectionText a {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  color: rgb(213, 199, 199);
+  background-color: white;
+  height: 40px;
+  width: 350px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.sectionText a:hover {
+  color: #553cdd;
+}
+
+/* leftSection2 */
+.leftSection2 {
+  margin-left: 200px;
+  /* border: 1px solid green; */
+}
+.leftSection2 li {
+  line-height: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-weight: 500;
+}
+.leftSection2 a {
+  color: red;
+  font-weight: 600;
+}
+.leftSection2 a.postclass {
+  color: #553cdd;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+/* img section */
+.imgSection1 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: 500;
+  /* border: 1px solid red; */
+}
+.leftImg1 {
+  height: 500px;
+  width: 50%;
+  /* border: 1px solid green; */
+  padding: 10px;
+  position: relative;
+}
+.leftImg1 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+  /* padding-right: 20px; */
+}
+.leftImg1 .leftbtn1 {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+.leftImg1 .leftbtn2 {
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 170px;
+  background-color: #604fc0;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+/* //////////////////////////////////////////////////////////////////////// */
+.leftImg2 {
+  height: auto;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+}
+.leftImg2 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+}
+.leftImg2 button {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* commom for all buttons */
+.mybtn {
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  border: none;
+  background-color: #604fc0;
+  color: white;
+}
+.mybtn:hover {
+  color: #553cdd;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.imgSection2 {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+.leftImg3 {
+  height: 600px;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg3 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+  /* padding-right: 20px; */
+}
+.leftImg3 .leftbtn5 {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+.leftImg4 {
+  height: 600px;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg4 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+}
+.leftImg4 button {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+.leftImg4 .leftbtn8 {
+  position: static;
+  height: 50px;
+  width: 170px;
+  background-color: #604fc0;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.imgSection3 {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+.leftImg5 {
+  height: 700px;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg5 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+  /* padding-right: 20px; */
+}
+.leftImg5 .leftbtn9 {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.leftImg6 {
+  height: auto;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg6 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+}
+.leftImg6 button {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+.leftImg6 .leftbtn12 {
+  position: static;
+  height: 50px;
+  width: 170px;
+  background-color: #604fc0;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.imgSection4 {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: 500;
+  /* border: 1px solid red; */
+}
+.leftImg7 {
+  height: auto;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg7 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+  /* padding-right: 20px; */
+}
+.leftImg7 .leftbtn13 {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.leftImg8 {
+  height: auto;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg8 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+}
+.leftImg8 button {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+.leftImg8 .leftbtn16 {
+  position: static;
+  height: 50px;
+  width: 170px;
+  background-color: #604fc0;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.imgSection5 {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+.leftImg9 {
+  height: auto;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg9 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+  /* padding-right: 20px; */
+}
+.leftImg9 .leftbtn17 {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.leftImg10 {
+  height: 500px;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg10 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+}
+.leftImg10 .leftbtn18 {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.imgSection6 {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 50px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+.leftImg11 {
+  height: auto;
+  width: 50%;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+}
+.leftImg11 img {
+  padding: 0;
+  height: 50%;
+  width: 100%;
+  /* padding-right: 20px; */
+}
+.leftImg11 .leftbtn19 {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 225, 225);
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* page numbers */
+.pagenumbers {
+  width: 170px;
+  height: auto;
+  display: flex;
+  margin-left: 400px;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+.pagenumbers a {
+  text-align: center;
+  float: left;
+  height: 30px;
+  width: 30px;
+  border: 1px solid gray;
+}
+.leftanchor {
+  border-top-left-radius: 5px;
+  background-color: #553cdd;
+  color: white;
+  border-bottom-left-radius: 5px;
+}
+.rightanchor {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagenumbers a:hover {
+  color: white;
+  background-color: #553cdd;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.rightSection {
+  width: 40%;
+  height: 600px;
+  /* border: 1px solid red; */
+}
+.rightSearch {
+  width: 350px;
+  height: 60px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightSearch:hover {
+  border: 1px solid #553cdd;
+}
+.rightSearch input {
+  width: 300px;
+  height: 50px;
+  border: none;
+}
+.searchInput {
+  height: 50px;
+  width: 40px;
+  padding: 0;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  background-color: white;
+}
+.topPosts li {
+  display: flex;
+  height: 50px;
+  width: auto;
+  /* border: 1px solid red; */
+}
+.topPosts img {
+  margin: 3px;
+}
+.topPosts h3 {
+  text-align: center;
+  margin-left: 50px;
+  font-size: 14px;
+  color: #604fc0;
+  font-weight: 1000;
+}
+
+/* RecentPosts */
+.RecentPosts li {
+  list-style: none;
+  height: 40px;
+  border: none none none;
+  font-weight: 500;
+}
+.RecentPosts li:hover {
+  color: #553cdd;
+  font-weight: 600;
+}
+
+/* Categories */
+.Categories li {
+  height: 50px;
+  font-weight: 500;
+  list-style: none;
+}
+.Categories li:hover {
+  color: #553cdd;
+  font-weight: 600;
+}
+/*///////////////////////////////////////// footer section//////////////////////////////// */
+.footer {
+  height: 200px;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: #0e1015;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h5 {
+  color: white;
+  /* text-align: center; */
+  font-weight: 700;
+  padding-left: 180px;
+  padding-top: 10px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 1000;
+}
+.footer a:hover {
+  color: #553cdd;
+}
+.footerText {
+  width: 50%;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+.footerIcons {
+  width: 50%;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+.footerIcons div {
+  height: 50px;
+  width: 80%;
+  margin-right: 100px;
+  /* border: 1px solid green; */
+}
+.icons i {
+  float: right;
+  padding-right: 20px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+.icons i:hover {
+  color: red;
+  /* background-color: #553cdd; */
+}
+
+/* /////////////////////////////// responsive web design ///////////////////// */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .brand-title {
+    margin-left: 10px;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  .title{height: 100px;}
+  .titleText {
+    width: 100%;
+    height: 20px;
+    padding: 20px 50px;
+  }
+  .mainSection {
+    display: block;
+  }
+  .leftSection {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid green; */
+  }
+  .leftSection img {
+    width: 100%;
+    height: 400px;
+    padding: 5px 5px 0px 5px;
+    /* border: 1px solid red; */
+  }
+  .sectionText a {
+    left: 5px;
+    width: 200px;
+  }
+  .leftSection2 {
+    margin:5px 5px 0px 5px;
+    margin-top: 0;
+  }
+  /* /////////////////////// image section //////////////////// */
+  .imgSection1{
+    display: block;
+    margin: 5px;
+  }
+  .leftImg1 {
+    width: 100%;
+    height: auto;
+  }
+  .leftImg1 img {
+    padding: 0;
+    height: 50%;
+    width: 100%;
+    /* padding-right: 20px; */
+  }
+  .leftImg1 .leftbtn1 {
+    position: absolute;
+    bottom: 50%;
+    left: 10px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 225, 225);
+  }
+  .leftImg1 .leftbtn2 {
+    position: static;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 170px;
+    background-color: #604fc0;
+    color: white;
+    border: none;
+    font-size: 16px;
+  }
+  /* //////////////////////////////////////////////////////////////////////// */
+  .leftImg2 {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  .leftImg2 img {
+    padding: 0;
+    height: 50%;
+    width: 100%;
+  }
+  .leftImg2 button {
+    bottom: 180px;
+  }
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* commom for all buttons */
+  /* .mybtn {
+    width: 150px;
+  } */
+  .imgSection2 {
+    display: block;
+    margin: 5px;
+    height: auto;
+  }
+  .leftImg3 {
+    width: 100%;
+  }
+  .leftImg3 img{
+    height: 50%;
+    padding: 0;
+    width: 100%;
+  }
+  .leftImg3 .leftbtn5{
+    bottom: 300px;
+  }
+  /* ////////////////////////// ------------------- ///////////////////// */
+  .leftImg4{
+    width: 100%;
+    height: auto;
+  }
+  .leftImg4 img {
+    padding: 0;
+    height: 50%;
+    width: 100%;
+  }
+  .leftImg4 button {
+    bottom: 244px;
+    left: 10px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 225, 225);
+  }
+  .imgSection3{
+    display: block;
+    margin: 5px;
+    /* border: 1px solid red; */
+  }
+  .leftImg5{
+width: 100%;
+/* height: auto; */
+/* border: 1px solid red; */
+/* padding: 5px; */
+  }
+  .leftImg5 img{
+    padding: 0;
+    height: 50%;
+    width: 100%;
+  }
+  .leftImg5 .leftbtn9{
+    bottom: 350px;
+  }
+  .leftImg6{
+    width: 100%;
+    height: auto;
+  }
+  .leftImg6 img{
+    padding: 0;
+    height: 50%;
+    width: 100%;
+  }
+  .leftImg6 .leftbtn11{
+    bottom: 245px;
+  }
+  .imgSection4{
+    display: block;
+    margin: 5px;
+    /* border: 1px solid red; */
+  }
+  .leftImg7{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid green; */
+  }
+  .leftImg7 img{
+    padding: 0;
+    height: 300px;
+    width: 100%;
+  }
+  .leftImg7 .leftbtn13{
+    bottom: 190px;
+  }
+  .leftImg8{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+  .leftImg8 img{height: 300px;}
+  .leftImg8 .leftbtn15{
+    bottom: 240px;
+  }
+  .imgSection5{
+    display: block;
+    height: 1100px;
+    padding: 0;
+    margin: 5px;
+    /* border: 1px solid green; */
+  }
+  .leftImg9{
+    width: 100%;
+    padding: 5px;
+  }
+  .leftImg9 img{
+    height: 300px;
+  }
+  .leftImg9 .leftbtn17{
+    bottom: 250px;
+  }
+  .leftImg10{
+    width: 100%;
+  }
+  .leftImg10 img{
+    height: 300px;
+  }
+  .leftImg10 .leftbtn18{
+    bottom: 190px;
+  }
+  .imgSection6{
+    display: block;
+    margin: 5px;
+    padding: 0;
+  }
+  .leftImg11{
+    width: 100%;
+  }
+  .leftImg11 .leftbtn19{bottom: 160px;}
+  .pagenumbers{
+    margin-left: 20px;
+  }
+  .rightSection{
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+  }
+  .footer{
+    height: 150px;
+    display: block;
+    margin: 0;
+  }
+  .footer h5{
+    font-weight: 500;
+    padding-left: 40px;
+  }
+  .footerText {
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid red; */
+    padding-top: 20px;
+  }
+  .footerIcons {
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid red; */
+  }
+}
